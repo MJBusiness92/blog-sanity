@@ -2,7 +2,7 @@
 
 //import Markdown from "react-markdown";
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 
 
 
@@ -10,10 +10,10 @@ const BlogCard = ({postData}) => {
   const formattedDate = postData.publishedAt ? new Date(postData.publishedAt).toISOString().substring(0, 10) : '';
 
   return (
-    <Link href={`/${postData._id}`}>
+    // <Link href={`/${postData._id}`}>
     <div className='flex flex-col space-y-2 bg-primary-bg w-72 hover:scale-105 transition-transform duration-200 ease-out rounded overflow-hidden'>
         <Image src={postData.image} 
-               alt="creators-content"
+               alt= {postData.title} // "creators-content"
                width={300}
                height={200}
                />
@@ -48,8 +48,8 @@ const BlogCard = ({postData}) => {
         </div>
             
     </div>
-    </Link>
-  )
+    /* </Link> */
+  );
 };
 
 export default BlogCard;

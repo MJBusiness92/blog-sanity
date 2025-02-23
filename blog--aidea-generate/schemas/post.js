@@ -18,8 +18,20 @@ export default defineType({
             options: {
                 source: 'title',
                 maxLength: 200,
-         
-            }
+                isUnique: isUniqueAcrossAllDocuments,
+                // Em último caso basta apenas renover ou comentar o slugify: input => input
+            //     slugify: input => input
+            // .toLowerCase()
+            // .replace(/\s+/g, '-')
+            // .replace(/[^\w-]+/g, '')
+            // .slice(0, 200)
+            slugify: input => input
+            .toLowerCase()
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .replace(/\s+/g, '-')
+            .replace(/[^\w-]+/g, '')           
+        },
         }),
         defineField({
             name: 'author',
