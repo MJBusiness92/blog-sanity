@@ -2,7 +2,7 @@
 
 import BlogCard from './BlogCard';
 import { getPosts } from '/lib/client';
-
+import Link from 'next/link';
 
 const BlogSection = async () => {
   const posts = await getPosts();
@@ -14,8 +14,11 @@ const BlogSection = async () => {
       </div>
       <ul className='flex flex-row flex-wrap justify-between space-y-8'>
         {posts.map((post) =>(
-          <li key={post._id} className='mt-8 mb-8'>
-          <BlogCard postData={post} />
+          // <li key={post._id} className='mt-8 mb-8'> // Motivo foi porque o precisavamos adicionar as 'Key' para garantir que cada elemento em uma lista tenha uma chave única.
+          <li key={`post-${post._id}`}>
+          <Link href={`/artigo/${post.slug}`} key={`link-${post._id}`}>
+             <BlogCard postData={post} key={`card-${post._id}`} />
+          </Link>
           </li>
         ))}
       </ul>
