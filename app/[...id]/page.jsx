@@ -5,6 +5,20 @@ import { getPosts } from "/lib/client";
 import Image from "next/image";
 import { PortableText } from "@portabletext/react";
 
+export const metadata = {
+  title: 'Blog AIdea Generate | Artigos sobre IA',
+  description: 'Artigos, materiais grátis e conteúdos sobre Inteligência Artificial',
+  openGraph: {
+    title: 'Blog AIdea Generate | Artigos sobre IA',
+    description: 'Artigos e conteúdos sobre Inteligência Artificial',
+    url: 'https://blog-aideagenerate.vercel.app',
+    siteName: 'Blog | AIdea Generate',
+    locale: 'pt-BR',
+    type: 'website',
+  },
+}
+
+
 /*export async function generateMetadata({ 
   params, 
 }: {
