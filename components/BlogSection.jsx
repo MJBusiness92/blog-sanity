@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import BlogCard from './BlogCard';
 import { getPosts } from '/lib/client';
