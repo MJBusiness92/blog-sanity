@@ -6,6 +6,9 @@ export const metadata = {
   title: 'Blog AIdea | Artigos sobre IA',
   description: 'Artigos e conteúdos sobre Inteligência Artificial',
   keywords: ['IA','AI', 'Inteligência Artificial', 'Blog', 'Tecnologia'],
+  verification: {
+    google: 'J2lf4PqA7U2aj3L50gVc9BXfxzYVcBamX-B-wirdU-8',
+  },
   openGraph: {
     title: 'Blog AIdea | Artigos sobre IA',
     description: 'Artigos e conteúdos sobre Inteligência Artificial',
