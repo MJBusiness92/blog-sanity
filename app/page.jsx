@@ -6,7 +6,7 @@ export const metadata = {
   title: 'Blog AIdea Generate - Tudo sobre IA',
   description: 'Artigos e conteúdos sobre Inteligência Artificial',
   keywords: ['IA','AI', 'Inteligência Artificial', 'Blog', 'Tecnologia'],
-  metadataBase: new URL('https://blog-aideagenerate.vercel.app'),
+  metadataBase: new URL('https://blog-aideagenerate.vercel.app'), // Valor do DNS Google Search Console: (google-site-verification=GBn5PDkS49nNanv_j70PDvs7p9Yj_sRP318Nue_zocs)
   verification: {
     google: 'J2lf4PqA7U2aj3L50gVc9BXfxzYVcBamX-B-wirdU-8',
   },
