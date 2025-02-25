@@ -16,7 +16,7 @@ const BlogSection = async () => {
         {posts.map((post) =>(
           // <li key={post._id} className='mt-8 mb-8'> // Motivo foi porque o precisavamos adicionar as 'Key' para garantir que cada elemento em uma lista tenha uma chave única.
           <li key={`post-${post._id}`}>
-          <Link href={`/artigo/${post.slug}`} key={`link-${post._id}`}>
+          <Link href={`/blog/${post.slug}`} key={`link-${post._id}`}>
              <BlogCard postData={post} key={`card-${post._id}`} />
           </Link>
           </li>
