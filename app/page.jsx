@@ -3,7 +3,7 @@ import Hero from '/components/Hero'
 import BlogSection from '../components/BlogSection'
 
 export const metadata = {
-  title: 'Blog AIdea | Artigos sobre IA',
+  title: 'Blog AIdea Generate - Tudo sobre IA',
   description: 'Artigos e conteúdos sobre Inteligência Artificial',
   keywords: ['IA','AI', 'Inteligência Artificial', 'Blog', 'Tecnologia'],
   metadataBase: new URL('https://blog-aideagenerate.vercel.app'),
@@ -11,7 +11,7 @@ export const metadata = {
     google: 'J2lf4PqA7U2aj3L50gVc9BXfxzYVcBamX-B-wirdU-8',
   },
   openGraph: {
-    title: 'Blog AIdea | Artigos sobre IA',
+    title: 'Blog AIdea Genarate - Tudo sobre IA',
     description: 'Artigos e conteúdos sobre Inteligência Artificial',
     url: 'https://blog-aideagenerate.vercel.app',
     siteName: 'Blog | AIdea Generate',
@@ -28,7 +28,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Blog AIdea | Artigos sobre IA',
+    title: 'Blog AIdea Generate - Tudo sobre IA',
     description: 'Artigos e conteúdos sobre Inteligência Artificial',
     images: ['https://blog-aidea.com/twitter-image.jpg'],
   },
